@@ -31,6 +31,11 @@ import org.junit.jupiter.api.Test;
 
 import jakarta.persistence.TypedQuery;
 
+/**
+ * Test case for HHH-19883
+ * 
+ * https://hibernate.atlassian.net/browse/HHH-19883
+ */
 @DomainModel(annotatedClasses = { Shelter.class, AbstractAnimal.class, CatAnimal.class })
 @ServiceRegistry(settings = { @Setting(name = AvailableSettings.SHOW_SQL, value = "true"),
 		@Setting(name = AvailableSettings.FORMAT_SQL, value = "true") })
